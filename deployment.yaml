@@ -16,7 +16,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: nginx
+      - image: ohiani/images:app-7
         name: flaskdemo
         resources: {}
 status: {}
@@ -32,6 +32,6 @@ spec:
   ports:
   - nodePort: 30001
     port: 80
-    targetPort: 80
+    targetPort: 5000
   selector:
     app: flaskdemo
